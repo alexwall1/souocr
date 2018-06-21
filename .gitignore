@@ -1,0 +1,8 @@
+.idea/
+/images/
+/pdfs/
+/xlsxs/
+/pythonenv/
+*.db
+*.pyc
+utils.py
