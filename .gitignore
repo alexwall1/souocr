@@ -1,8 +1,11 @@
+/celery/
 .idea/
+/uploads/
 /images/
 /pdfs/
 /xlsxs/
 /pythonenv/
-*.db
+*.db*
 *.pyc
 utils.py
+settings.py

@@ -1,0 +1,18 @@
+{% extends "home.html" %}
+{% block body %}
+<table>
+{% for result in results %}
+    <tr>
+        <td>{{ result[2] }}</td>
+        <td>{{ result[3] }}</td>
+        <td>{{ result[1] }}</td>
+        <td><input type="checkbox" name="decline" id="decline_{{ result[0] }}"> <label for="decline_{{ result[0] }}"> Avstår från att svara</label></td>
+        <td>
+            <input type="radio" name="opinion" id="disagree_{{ result[0] }}"><label for="disagree_{{ result[0] }}"> Avstyrker</label>
+            <input type="radio" name="opinion" id="neutral_{{ result[0] }}"><label for="neutral_{{ result[0] }}"> Neutral</label>
+            <input type="radio" name="opinion" id="agree_{{ result[0] }}"><label for="agree_{{ result[0] }}"> Tillstyrker</label>
+        </td>
+    </tr>
+{% endfor %}
+</table>
+{% endblock %}

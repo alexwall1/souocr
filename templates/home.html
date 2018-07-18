@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block body %}
+<table>
+    <th>
+        <td>Rubrik</td>
+        <td>Underrubrik</td>
+        <td>Kommitté</td>
+        <td></td>
+        <td></td>
+    </th>
+    {% for file in files %}
+    <tr>
+        <td>{{ file[2] }}</td>
+        <td>{{ file[3] }}</td>
+        <td>{{ file[4] }}</td>
+        <td><a href="{{ file[0] }}">pdf</a></td>
+        <td><a href="{{ file[0] }}">xlsx</a></td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
